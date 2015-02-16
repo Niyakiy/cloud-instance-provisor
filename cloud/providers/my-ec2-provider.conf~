@@ -1,0 +1,16 @@
+my-ec2-config:
+  extends: 
+
+  securitygroup: open-ssh
+  ssh_interface: public_ips
+
+  minion:
+    master: salt.wise-ops.guru
+
+  ssh_username:
+    - ec2-user
+    - ubuntu
+    - admin
+    - bitnami
+
+  provider: ec2
