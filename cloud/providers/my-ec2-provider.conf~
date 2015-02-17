@@ -1,5 +1,5 @@
 my-ec2-config:
-  extends: 
+  extends: my-acc-data:ec2
 
   securitygroup: open-ssh
   ssh_interface: public_ips
@@ -12,5 +12,3 @@ my-ec2-config:
     - ubuntu
     - admin
     - bitnami
-
-  provider: ec2
